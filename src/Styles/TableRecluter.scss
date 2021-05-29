@@ -4,10 +4,11 @@
   font-family: Roboto;
   border-collapse: collapse;
   width: 90%;
-  margin:5%;
+  margin: 5%;
   background-color: #F8F8F8;
 
 }
+
 
 .tableStyle td, .tableStyle th {
     border: 1px solid #ddd;
@@ -36,10 +37,18 @@
 	color: white;
 	font-family: 'Roboto';
 	font-style: bold;
-	padding: 1%;
+	padding: 3%;
 	margin: 5%;
-	width: 30%;
+	width: 80%;
 	height: 35%;
 	align-self: center;
 	border-style: none;
+}
+
+.MyButton:hover {
+  background-color: #D73F3C;
+}
+
+.favorites{
+  width: 90%;
 }

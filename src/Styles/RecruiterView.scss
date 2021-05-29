@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+// .mainContainer{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+// }
+
 p {
     color: #891928;
     font-family: Roboto;
@@ -10,13 +16,13 @@ p {
 
 .buttonsRecruiters {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
+    // flex-direction: row;
+    // flex-wrap: wrap-reverse;
 }
 
 .selectsRecluters {
     display: flex;
-    flex-direction: row;   
+    // flex-direction: row;   
 }
 
 .btn-selectRecluter {

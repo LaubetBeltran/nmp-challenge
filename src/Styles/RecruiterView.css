@@ -10,22 +10,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
 }
 
 .selectsRecluters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .btn-selectRecluter {
@@ -62,4 +52,4 @@ p {
   background: -webkit-gradient(linear, right top, left top, from(#EB403C), color-stop(#C9003C), to(#98002E));
   background: linear-gradient(-90deg, #EB403C, #C9003C, #98002E);
 }
-/*# sourceMappingURL=recruiterView.css.map */
+/*# sourceMappingURL=RecruiterView.css.map */
