@@ -5,7 +5,6 @@ import TableRecluter from '../Components/TableRecluter';
 // import WelcomeUser from '../Components/WelcomeUser';
 import firebase from '../Firebase/firebase'
 import 'firebase/firestore'
-import '../Styles/profile.css'
 import '../Styles/RecruiterView.css'
 
 const db = firebase.firestore();
@@ -56,6 +55,7 @@ const Recruiters = () => {
         <p className="welcomeUser-title">
 				  ¡Hola, Alexander!
 			  </p>
+        {/* <div className="mainContainer"> */}
         <div className="buttonsRecruiters">
           <div className="selectsRecluters">
             <select
@@ -89,19 +89,22 @@ const Recruiters = () => {
             <option value="PRD">PRODUCTOS</option>
             <option value="PFI">PLANEACIÓN FINANCIERA</option>
           </select>
-          </div>
+          </div> 
           <input type='button' 
             id=''
-            className='btn-formNewCandidate' 
+            className='btn-formNewCandidate'
             value='REGISTRAR NUEVO CANDIDATO'
             onClick={registerCandidateBtn} 
           />
-        
+          </div>          
+          <div className="tableContainer">
+            <TableRecluter />
+          </div>
         </div>
-        <TableRecluter />
-      </div>
-      <SmallFooter />   
-    </div> 
+       <SmallFooter />   
+      </div> 
+    
+    
   
   )
 }

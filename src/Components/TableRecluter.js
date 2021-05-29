@@ -19,7 +19,7 @@ const UserTable = () => (
     </thead>
     <tbody>
       <tr>
-        <td><img alt="nmp-img" src={Joya} className="nmp-img" /></td>
+        <td><img alt="favorites" src={Joya} className="favorites" /></td>
         <td>Especialista de relaciones laborales</td>
         <td>Ana Martínez</td>
         <td>anamat@hotmail.com</td>
