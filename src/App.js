@@ -12,6 +12,7 @@ import MockView from './Views/MockView';
 function App() {
 
 	const [isLogin, setIsLogin] = useState(false)
+	const [buttonViews, setButtonViews] = useState('/recruiters');
 
 	useEffect(() => {
 		firebase.auth().onAuthStateChanged(function (user) {
@@ -39,7 +40,7 @@ function App() {
 								/>
 								<Route exact path="/profile" component={UserProfile} />
 								<Route exact path="/signup" component={SignUp} />
-								<Route exact path="/recruiters" component={Recruiters} />
+								<Route exact path="/recruiters" component={Recruiters} buttonViews={buttonViews} setButtonViews={setButtonViews}/>
 								<Route exact path="/mock" component={MockView} />
 							</Fragment>
 							:
