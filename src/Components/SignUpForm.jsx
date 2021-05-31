@@ -15,29 +15,42 @@ const initialInputs = {
 }
 
 export const SignUpForm = () => {
+	const auth = firebase.auth();
+ 	const db = firebase.firestore();
+	const history = useHistory(); 
+
   const [name, setName] = useState("");
   const [rfc, setRfc] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState(initialInputs);
-  const [password, setPassword] = useState(initialInputs); 
-  const history = useHistory();
+  const [password, setPassword] = useState(initialInputs);
+	const [recruiter, setRecruiter] = useState('');
+	const [idPreSign, setIdPreSign] = useState('');
+	const status = 'initial';
+	const cv = 'none';
+	const interviews = [];
+	
   
 const info = async (e) =>{
  e.preventDefault();
- const auth = firebase.auth();
- auth.createUserWithEmailAndPassword(email, password)
+ db.collection('preSignUp').doc(rfc).get()
+	.then((res)=>{
+		console.log(res.id, 'soy el id')
+		setRecruiter(res.data().recruiter);
+		setIdPreSign(res.id);
+		auth.createUserWithEmailAndPassword(email, password)
     .then(()=>{
         console.log('registrado')
-        history.pushState('./')
+        history.pushState('./') 
+				db.collection("candidates").doc().set({name, rfc, phone, email, recruiter, status, cv, interviews});
+ 				db.collection("users").doc(email).set({name, email, 'premission' :'applicant'});
+ 				db.collection('preSignUp').doc(rfc).delete();
     })
     .catch(()=>{
         console.log('no registrado :c')
     })
+	})
 
-
- const db = firebase.firestore();
- db.collection("candidates").doc().set({name, rfc, phone, email})
-    
 }
 
 const [isVerified, setIsVerified] = useState(false);
