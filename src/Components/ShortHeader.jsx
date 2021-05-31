@@ -3,9 +3,10 @@ import firebase from '../Firebase/firebase'
 import '../Styles/onboarding.css'
 import nmp from "../Static/Images/nmp.png";
 import { useHistory } from "react-router-dom";
+import { useRouteMatch } from "react-router-dom";
 
-const ShortHeader = (props) => {
-  
+const ShortHeader = () => {
+
   // const [setRecruiters] = useState(false);
   const history = useHistory(); 
 
@@ -17,113 +18,41 @@ const ShortHeader = (props) => {
       console.log(error);
     });
   }
-    return (
-      <>
-      { (props.buttonViews === '/recruiters') ? 
-      <div className="shortHeader-container">
-      <img alt="nmp-img" src={nmp} className="nmp-img" />
-      <div className="btns-container">
-        <input type='button' 
-          id=''
-          className='close-btn' 
-          value='CERRAR SESIÓN'
-          onClick={closeSessionBtn} 
-        />
-      </div>
-    </div>
-      : 
-      <div className="shortHeader-container">
-        <img alt="nmp-img" src={nmp} className="nmp-img" />
-        <div className="btns-container">
-          <input type='button' 
-            id=''
-            className='rec-btn' 
-            value='RECOMENDACIONES'
-            
-          />
-          <input type='button' 
-            id=''
-            className='close-btn' 
-            value='CERRAR SESIÓN'
-            onClick={closeSessionBtn} 
-          />
-        </div>
-      </div>
-      }
-      </>
-    )
-//   return({!'/recruiters' ?
-//   <div className="shortHeader-container">
-//   <im//   <div className="btns-container">
-//g alt="nmp-img" src={nmp} className="nmp-img" />
-//     <input type='button' 
-//       id=''
-//       className='rec-btn' 
-//       value='RECOMENDACIONES'
-      
-//     />
-//     <input type='button' 
-//       id=''
-//       className='close-btn' 
-//       value='CERRAR SESIÓN'
-//       onClick={closeSessionBtn} 
-//     />
-//   </div>
 
-// </div>
-  
-//   : 
-//     <div className="shortHeader-container">
-//     <img alt="nmp-img" src={nmp} className="nmp-img" />
-//     <div className="btns-container">
-//       <input type='button' 
-//         id=''
-//         className='close-btn' 
-//         value='CERRAR SESIÓN'
-//         onClick={closeSessionBtn} 
-//       />
-//     </div>
-  
-//   </div> 
-//    })
-    // if (!setRecruiters === '/recruiters') {
-    //   return (
-    //     <div className="shortHeader-container">
-    //   <img alt="nmp-img" src={nmp} className="nmp-img" />
-    //   <div className="btns-container">
-    //     <input type='button' 
-    //       id=''
-    //       className='rec-btn' 
-    //       value='RECOMENDACIONES'
-          
-    //     />
-    //     <input type='button' 
-    //       id=''
-    //       className='close-btn' 
-    //       value='CERRAR SESIÓN'
-    //       onClick={closeSessionBtn} 
-    //     />
-    //   </div>
-    
-    // </div>
-    //   )
-    // }
-    // if (setRecruiters === '/recruiters'){
-    //   return (
-    //     <div className="shortHeader-container">
-    //     <img alt="nmp-img" src={nmp} className="nmp-img" />
-    //     <div className="btns-container">
-    //       <input type='button' 
-    //         id=''
-    //         className='close-btn' 
-    //         value='CERRAR SESIÓN'
-    //         onClick={closeSessionBtn} 
-    //       />
-    //     </div>
-      
-    //   </div> 
-    //   )
-    // }
+  let match = useRouteMatch("/recruiters");
+
+  return <div>
+    {!match && 
+    <div className="shortHeader-container">
+    <img alt="nmp-img" src={nmp} className="nmp-img" />
+    <div className="btns-container">
+      <input type='button' 
+        id=''
+        className='rec-btn' 
+        value='RECOMENDACIONES'
+        
+      />
+      <input type='button' 
+        id=''
+        className='close-btn' 
+        value='CERRAR SESIÓN'
+        onClick={closeSessionBtn} 
+      />
+    </div>
+  </div>}
+     {match && 
+     <div className="shortHeader-container">
+     <img alt="nmp-img" src={nmp} className="nmp-img" />
+     <div className="btns-container">
+       <input type='button' 
+         id=''
+         className='close-btn' 
+         value='CERRAR SESIÓN'
+         onClick={closeSessionBtn} 
+       />
+     </div>
+   </div>} 
+  </div>;
 }
 
 export default ShortHeader;
