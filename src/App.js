@@ -7,7 +7,7 @@ import firebase from './Firebase/firebase'
 import { ToastProvider } from 'react-toast-notifications'
 import SignUp from './Views/SingUp';
 import Recruiters from './Views/Recruiters';
-import MockView from './Views/MockView';
+
 
 function App() {
 
@@ -39,7 +39,7 @@ function App() {
 								/>
 								<Route exact path="/profile" component={UserProfile} />
 								<Route exact path="/recruiters" component={Recruiters} />
-								<Route exact path="/mock" component={MockView} />
+							
 							</Fragment>
 							:
 							<Fragment>

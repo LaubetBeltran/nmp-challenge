@@ -1,7 +1,7 @@
 import React, {useEffect, useState}  from 'react'
 import ShortHeader from '../Components/ShortHeader';
 import SmallFooter from '../Components/SmallFooter';
-import TableRecluter from '../Components/TableRecluter';
+import MockView from '../Components/MockView';
 // import WelcomeUser from '../Components/WelcomeUser';
 ///Modal
 import openModal from '../Components/ModalFunction';
@@ -103,7 +103,7 @@ const Recruiters = () => {
           />
           </div>          
           <div className="tableContainer">
-            <TableRecluter />
+            <MockView/>
           </div>
         </div>
        <SmallFooter />   

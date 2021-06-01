@@ -109,6 +109,7 @@ const SignUpForm = () => {
                         </label>
                         <input type='password'
                             id='loginPswConfirmed'
+                            
                         />
                     </div>
                         {/* if (loginPsw !=== loginPswConfirmed) {

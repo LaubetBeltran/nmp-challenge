@@ -1,9 +1,6 @@
 import React from 'react'
-// import React, {useState}  from 'react'
 import '../Styles/TableRecluter.css'
-
 import Joya from "../assets/JoyaGray.png";
-
 import openModal from './ModalFunction';
 import ModalInfoPostulant from './ModalInfoPostulant';
 
