@@ -4,7 +4,6 @@ import "./ModalPreSignup.css";
 import firebase from "../Firebase/firebase";
 import "firebase/firestore";
 
-
 const ModalPreSingup = () => {
 	const db = firebase.firestore();
 	const dialog = useDialog();
