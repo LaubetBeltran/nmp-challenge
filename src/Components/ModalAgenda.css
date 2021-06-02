@@ -1,0 +1,111 @@
+.ma-modalForm-container {
+	min-height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.ma-titleModal{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 37px;
+	display: flex;
+	align-items: center;
+	text-align: start;
+	color: #891928;
+	border-bottom: 2px solid #891928;
+	width:80%;
+	margin:0% 10% 2% 10%;
+
+} 
+
+.ma-CandidatoModal{
+  width:80%;
+	margin:0% 10% 2% 10%;
+  text-align: start;
+  font-family: 'Roboto';
+	font-weight: bold;
+
+}
+
+.ma-form{
+	width: 70%;
+	padding: 1% 5% 5% 0%;
+	display: flex;
+	flex-direction: column;
+}
+.ma-inputsForms-container {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+}
+
+.ma-input-container{
+	display: flex;
+	margin: 1%;
+}
+
+.ma-label-inpuForm{
+	text-align: end;
+	margin-right: 5%;
+	width: 50%;
+	font-family: 'Roboto';
+}
+
+.ma-form-input{
+	width: 35%;
+	height: 28px;
+	background-color: rgba(233, 232, 232, 1);
+	border-style: none;
+	border-radius: 10px ;
+}
+
+.ma-form-select {
+	width: 35%;
+	height: 30px;
+	border-radius: 10px ;
+	background-color: rgba(233, 232, 232, 1);
+	border-style: none;
+	padding: 1%;
+	font-family: 'Roboto';
+	cursor: pointer;
+}
+
+.ma-form-Biginput{
+	width: 35%;
+	height: 50px;
+	background-color: rgba(233, 232, 232, 1);
+	border-style: none;
+	border-radius: 10px ;
+	font-family: 'Roboto';
+}
+
+.ma-button-container{
+	display: flex;
+	width: 100%;
+	margin-top: 3%;
+	justify-content: center;
+}
+
+.ma-submit-button{
+	background-color: rgba(253, 181, 19, 1);
+	color: white;
+	font-family: 'Roboto';
+	font-style: bold;
+	padding: 1%;
+	margin: 5%;
+	width: 30%;
+	height: 35%;
+	align-self: center;
+	border-style: none;
+	cursor: pointer;
+}
+
+.ma-submit-button:hover {
+  background-color: #D73F3C;
+}
+

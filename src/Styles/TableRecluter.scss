@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.tableStyle{
+  font-family: Roboto;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 5%;
+  background-color: #F8F8F8;
+
+}
+
+
+.tableStyle td, .tableStyle th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+.tableStyle tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.tableStyle tr:hover {
+    background-color: #ddd;
+  }
+    
+.tableStyle th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      // background-color: #F8F8F8;
+      color:black;
+      // text-transform: uppercase;
+}
+
+.MyButton {
+  background-color: rgba(253, 181, 19, 1);
+	color: white;
+	font-family: 'Roboto';
+	font-style: bold;
+	padding: 3%;
+	margin: 5%;
+	width: 80%;
+	height: 35%;
+	align-self: center;
+	border-style: none;
+}
+
+.MyButton:hover {
+  background-color: #D73F3C;
+}
+
+.favorites{
+  width: 90%;
+}

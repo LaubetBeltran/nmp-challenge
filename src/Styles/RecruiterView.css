@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.displayDataCandidates p {
+  color: #891928;
+  font-family: Roboto;
+  font-size: 1.3em;
+  padding-left: 5%;
+}
+
+.buttonsRecruiters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selectsRecluters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-selectRecluter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 41px;
+  width: 219px;
+  border: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 0 15px;
+  margin-top: 2rem;
+  margin-left: 15%;
+  background: -webkit-gradient(linear, right top, left top, from(#EB403C), color-stop(#C9003C), to(#98002E));
+  background: linear-gradient(-90deg, #EB403C, #C9003C, #98002E);
+}
+
+.btn-selectRecluter option {
+  color: #98002E;
+}
+
+.btn-formNewCandidate {
+  height: 41px;
+  width: 230px;
+  border: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 0 10px;
+  margin-top: 2rem;
+  margin-left: 611px;
+  background: -webkit-gradient(linear, right top, left top, from(#EB403C), color-stop(#C9003C), to(#98002E));
+  background: linear-gradient(-90deg, #EB403C, #C9003C, #98002E);
+}
+/*# sourceMappingURL=RecruiterView.css.map */

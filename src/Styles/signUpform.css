@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.signUp-container {
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column; */
+  flex-direction: column;
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center; */
+  justify-content: center;
+  /* -webkit-box-align: center;
+  -ms-flex-align: center; */
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  margin-top: 64px;
+  background: black;
+}
+.signUp-container .signUpbackImg {
+  width: 100%;
+  opacity: 0.75;
+}
+
+.signUp-form-container {
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  /* -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column; */
+  flex-direction: column;
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center; */
+  justify-content: center;
+  /* -webkit-box-align: center;
+  -ms-flex-align: center; */
+  align-items: center;
+  background: #dedede;
+  position: absolute;
+  padding: 35px 200px;
+}
+
+.signUp-form-container p {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+#signUp-form-container-w {
+  display: flex;
+  padding: 1% 3% 0% 3%;
+  margin: 0% 1% 0% 1%
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 5; */
+  /* grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto); */
+}
+
+.formLR {
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+
+
+
+/* .signUp-form-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+} */
+
+.formLR label {
+  font-size: 18px;
+  color: #283238;
+  margin-bottom: 2px;
+}
+
+.formLR input {
+  width: 450px;
+  height: 50px;
+  border-style: none;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+input [type="button"] {
+  width: 450px;
+  height: 54.34px;
+  border-style: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-top: 27.63px;
+  font-weight: 600;
+}
+
+.labelInputSgngUp {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.AvisoDePrivacidad {
+  display: flex;
+  align-content: center;
+  margin: 3%;
+}
+
+
+/* .politics {
+  width
+} */
+
+
+/* .signUpbtn-disabled {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(5.31%, #909090),
+    to(#c4c4c4)
+  );
+  background: linear-gradient(90deg, #909090 5.31%, #c4c4c4 100%);
+}
+.signUpbtn-enabled {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#891928),
+    to(#ea3e3c)
+  );
+  background: linear-gradient(90deg, #891928 0%, #ea3e3c 100%);
+} */
+.signUp-form-container input[type="submit"] {
+  width: 450px;
+  height: 54.34px;
+  border-style: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  margin-top: 27.63px;
+  font-weight: 600;
+}
+
+.btn-disabled {
+  background: -webkit-gradient(linear, left top, right top, color-stop(5.31%, #909090), to(#C4C4C4));
+  background: linear-gradient(90deg, #909090 5.31%, #C4C4C4 100%);
+}
+
+.btn-enabled {
+  background: -webkit-gradient(linear, left top, right top, from(#891928), to(#EA3E3C));
+  background: linear-gradient(90deg, #891928 0%, #EA3E3C 100%);
+}
+/*# sourceMappingURL=login.css.map */

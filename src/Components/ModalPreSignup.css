@@ -1,0 +1,73 @@
+.ps-modalForm-container {
+	min-height: 50vh;
+	
+}
+
+.ps-titleModal{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 37px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #891928;
+	border-bottom: 2px solid #891928;
+	width:85%;
+	margin:3% 8% 2% 8%;
+
+} 
+
+.ps-form{
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.sp-input-container{
+	display: flex;
+	margin: 2%;
+}
+
+.ps-label-inpuForm{
+	text-align: center;
+	width: 50%;
+	font-family: 'Roboto';
+}
+
+.ps-form-input{
+	width: 50%;
+	height: 28px;
+	background-color: rgba(233, 232, 232, 1);
+	border-style: none;
+	border-radius: 10px ;
+}
+
+.ps-form-select {
+	width: 50%;
+	height: 25px;
+	border-radius: 10px ;
+	background-color: rgba(233, 232, 232, 1);
+	border-style: none;
+	font-family: 'Roboto';
+	cursor: pointer;
+}
+
+.ps-submit-button{
+	background-color: rgba(253, 181, 19, 1);
+	color: white;
+	font-family: 'Roboto';
+	font-style: bold;
+	padding: 1%;
+	margin: 5%;
+	width: 30%;
+	height: 35%;
+	align-self: center;
+	border-style: none;
+	cursor: pointer;
+}
+
+.ps-submit-button:hover {
+  background-color: #D73F3C;
+}
