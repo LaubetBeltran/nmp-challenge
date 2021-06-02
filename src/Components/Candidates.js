@@ -47,7 +47,7 @@ const Candidates = () => {
                   <td key={candidate}>{candidate.cv}</td>
                   <td key={candidate}>{candidate.status}</td>
                   <td key={candidate}>
-                  <button className="MyButton" onClick={()=>openModal(ModalInfoPostulant)}>ACTUALIZAR ESTADO</button>
+                  <button className="MyButton" onClick={()=>openModal(ModalInfoPostulant, candidate)}>ACTUALIZAR ESTADO</button>
                   </td>
               </tr>
             
