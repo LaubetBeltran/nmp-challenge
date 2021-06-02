@@ -31,7 +31,8 @@ const FilterStatus = (props) => {
             <option value="DOCUMENTACIÓN">DOCUMENTACIÓN</option>
             <option value="EXAMEN MÉDICO">EXAMEN MÉDICO</option>
             <option value="ESTUDIO SOCIO-ECONÓMICO">ESTUDIO SOCIO-ECONÓMICO</option>
-            <option value="PROCESO CONCLUIDO">PROCESO CONCLUIDO</option>
+						<option value="PROCESO COMPLETADO">PROCESO COMPLETADO</option>
+            <option value="PROCESO FINALIZADO">PROCESO FINALIZADO</option>
         </select>
       </>
     )
